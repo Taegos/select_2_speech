@@ -1,0 +1,12 @@
+C:\Users\Benjamin\Desktop\SystemTrayApp\bin\Debug\SystemTrayApp.exe
+C:\Users\Benjamin\Desktop\SystemTrayApp\bin\Debug\SystemTrayApp.pdb
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.csprojAssemblyReference.cache
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.AboutBox.resources
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.Properties.Resources.resources
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.csproj.GenerateResource.cache
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.exe
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.pdb
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\Interop.SpeechLib.dll
+C:\Users\Benjamin\Desktop\SystemTrayApp\obj\x86\Debug\SystemTrayApp.csproj.ResolveComReference.cache
+C:\Users\Benjamin\Desktop\SystemTrayApp\bin\Debug\SystemTrayApp.exe.config

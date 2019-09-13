@@ -1,0 +1,5 @@
+TODO:
+#1 Lägga in språk val till options
+#2 Binda språk till hotkey
+#3 Automatisk installation av speech platform runtime och start språk.
+#4 Välkomstskärm / guide första gången programmet körs.

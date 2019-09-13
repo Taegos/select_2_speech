@@ -1,0 +1,71 @@
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SystemTrayApp
+{
+    class ConfigAPI
+    {
+        public string[] ExecuteKeys { get;  private set; }
+        public string Voice { get; private set; }
+
+        private static FileStream stream;
+
+        private ConfigAPI(string[] executeKeys, string voice)
+        {
+            ExecuteKeys = executeKeys;
+            Voice = voice;
+        }
+
+        public static void Write(string[] executeKeys, string voice)
+        {
+            if (stream == null) stream = CreateStream();
+
+        }
+
+        public static ConfigAPI Read()
+        {
+            if (stream == null) stream = CreateStream();
+            StreamReader reader = new StreamReader(stream);
+            string json = reader.ReadToEnd();
+            reader.Close();
+            
+                        
+            return JsonConvert.DeserializeObject<ConfigAPI>(json);          
+             
+        }
+
+        public static void Close()
+        {
+            if (stream != null)
+            {
+                stream.Close();
+            }
+        }
+
+        private static FileStream CreateStream(string path = "settings.json")
+        {
+            try
+            {
+                return File.Open(path, FileMode.Open, FileAccess.ReadWrite, FileShare.None);
+            }
+            catch (FileNotFoundException)
+            {
+                ConfigAPI settings = new ConfigAPI(
+                    new string[] {
+                        "CTRL",
+                        "Z"
+                    },    
+                    "Microsoft David Desktop"
+                );            
+                string json = JsonConvert.SerializeObject(settings);
+                File.WriteAllText(path, json);
+                return CreateStream(path);
+            }
+        }
+    }
+}
